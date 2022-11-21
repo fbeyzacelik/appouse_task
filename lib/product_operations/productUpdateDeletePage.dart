@@ -1,7 +1,8 @@
-import 'package:appouse/HomeBar.dart';
-import 'package:appouse/Login/LoginTextFormField.dart';
+import 'package:appouse_task/Login/LoginTextFormField.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import '../HomeBar.dart';
 
 class UpdateForm extends StatefulWidget {
   @override

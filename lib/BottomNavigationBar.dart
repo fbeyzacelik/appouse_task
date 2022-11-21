@@ -1,8 +1,10 @@
-import 'package:appouse/BuyPage.dart';
-import 'package:appouse/FavoritesPage.dart';
-import 'package:appouse/HomeBar.dart';
-import 'package:appouse/ProfileBar.dart';
+
 import 'package:flutter/material.dart';
+
+import 'BuyPage.dart';
+import 'FavoritesPage.dart';
+import 'HomeBar.dart';
+import 'ProfileBar.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key key}) : super(key: key);

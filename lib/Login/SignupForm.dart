@@ -1,9 +1,9 @@
-import 'package:appouse/Login/LoginForm.dart';
-import 'package:appouse/Login/LoginTextFormField.dart';
-import 'package:appouse/Login/login_model.dart';
-import 'package:appouse/Login/valHelper.dart';
 import 'package:flutter/material.dart';
 import 'DbHelper.dart';
+import 'LoginForm.dart';
+import 'LoginTextFormField.dart';
+import 'login_model.dart';
+import 'valHelper.dart';
 
 class SignupForm extends StatefulWidget {
   @override
@@ -102,7 +102,7 @@ class _SignupFormState extends State<SignupForm> {
                   Container(
                     margin: EdgeInsets.all(30.0),
                     width: double.infinity,
-                    child: FlatButton(
+                    child: MaterialButton(
                       child: Text(
                         'Kaydet',
                         style: TextStyle(color: Colors.white),
@@ -119,14 +119,14 @@ class _SignupFormState extends State<SignupForm> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('Hesabın var mı? '),
-                        FlatButton(
+                        MaterialButton(
                           textColor: Colors.red,
                           child: Text('Giriş Yap'),
                           onPressed: () {
                             Navigator.pushAndRemoveUntil(
                                 context,
                                 MaterialPageRoute(builder: (_) => LoginForm()),
-                                    (Route<dynamic> route) => false);
+                                (Route<dynamic> route) => false);
                           },
                         )
                       ],

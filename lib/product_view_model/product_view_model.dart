@@ -1,5 +1,5 @@
-import 'package:appouse/products_model/product_model.dart';
-import 'package:appouse/services/service.dart';
+import 'package:appouse_task/products_model/product_model.dart';
+import 'package:appouse_task/services/service.dart';
 import 'package:mobx/mobx.dart';
 
 part 'product_view_model.g.dart';

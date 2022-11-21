@@ -1,12 +1,13 @@
-import 'package:appouse/Login/LoginHeaderLogo.dart';
-import 'package:appouse/Login/LoginTextFormField.dart';
-import 'package:appouse/Login/SignupForm.dart';
-import 'package:appouse/Login/dbHelper.dart';
-import 'package:appouse/Login/login_model.dart';
-import 'package:appouse/Login/valHelper.dart';
-import 'package:appouse/BottomNavigationBar.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../BottomNavigationBar.dart';
+import 'LoginHeaderLogo.dart';
+import 'LoginTextFormField.dart';
+import 'SignupForm.dart';
+import 'dbHelper.dart';
+import 'login_model.dart';
+import 'valHelper.dart';
 
 class LoginForm extends StatefulWidget {
   @override
@@ -15,6 +16,7 @@ class LoginForm extends StatefulWidget {
 
 class _LoginFormState extends State<LoginForm> {
   Future<SharedPreferences> _pref = SharedPreferences.getInstance();
+
   //final _formKey = new GlobalKey<FormState>();
   final _conEmail = TextEditingController();
   final _conPassword = TextEditingController();
